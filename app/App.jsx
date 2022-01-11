@@ -1,7 +1,8 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Page } from './components/Page';
+import './styles.scss';
+import { ToDo } from './components/ToDo';
 
 window.addEventListener('load', () => {
-    ReactDOM.render(<Page />, document.getElementById('content'));
+    ReactDOM.render(<ToDo />, document.getElementById('content'));
 });

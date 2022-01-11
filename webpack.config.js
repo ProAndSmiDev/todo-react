@@ -19,6 +19,10 @@ module.exports  = {
                 test: /\.[tj]sx?$/,
                 use: ['ts-loader'],
             },
+            {
+                test: /\.s[ac]ss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            }
         ],
     },
     plugins: [
