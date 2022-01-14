@@ -11,7 +11,7 @@ export default class ToDoTask extends Component {
 
                 <div className="card-body">
                     <p>
-                        Это тело карточки
+                        {this.props.taskText}
                     </p>
 
                     <ToDoButton

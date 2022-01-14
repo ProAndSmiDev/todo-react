@@ -17,7 +17,8 @@ export default class ToDoTaskList extends Component {
                         {this.props.tasks.map((item, idx) =>
                             <ToDoTask
                                 key={idx}
-                                taskName={item}
+                                taskName={item.title}
+                                taskText={item.text}
                                 removeTask={this.props.removeTask}
                             />
                         )}
